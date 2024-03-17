@@ -26,5 +26,18 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+
+		
+		
+
+		private void exit_CalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			Environment.Exit(0);
+		}
+
+		private void cur_CalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(currencyCalculatorxaml));
+		}
 	}
 }
