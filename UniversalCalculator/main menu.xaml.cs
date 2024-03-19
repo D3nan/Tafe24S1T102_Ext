@@ -39,5 +39,10 @@ namespace Calculator
 		{
 			Frame.Navigate(typeof(currencyCalculatorxaml));
 		}
-	}
+
+		private void morg_CalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(MortgageCalculator));
+		}
+    }
 }
