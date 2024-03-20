@@ -63,7 +63,7 @@ namespace Calculator
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-			Frame.Navigate(typeof(main_menu));
+			Frame.Navigate(typeof(MainMenu));
 		}
 
 		private void converterSelector(double fromAmount)

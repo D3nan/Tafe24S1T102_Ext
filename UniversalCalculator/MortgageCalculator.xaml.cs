@@ -74,12 +74,12 @@ namespace Calculator
 
 		private void menuButton_Click(object sender, RoutedEventArgs e)
 		{
-			Frame.Navigate(typeof(main_menu));
+			Frame.Navigate(typeof(MainMenu));
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-			Frame.Navigate(typeof(main_menu));
+			Frame.Navigate(typeof(MainMenu));
 		}
 	}
 }

@@ -20,24 +20,25 @@ namespace Calculator
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class main_menu : Page
+	public sealed partial class MainMenu : Page
 	{
-		public main_menu()
+		public MainMenu()
 		{
 			this.InitializeComponent();
 		}
-
 		
-		
-
-		private void exit_CalculatorButton_Click(object sender, RoutedEventArgs e)
+		private void math_CalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			Environment.Exit(0);
+			Frame.Navigate(typeof(SimpleCalculator));
+		}
+		private void morg_CalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(MortgageCalculator));
 		}
 
 		private void cur_CalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			Frame.Navigate(typeof(currencyCalculatorxaml));
+			Frame.Navigate(typeof(CurrencyCalculator));
 		}
 
 		private void fuel_CalculatorButton_Click(object sender, RoutedEventArgs e)
@@ -45,9 +46,10 @@ namespace Calculator
 			Frame.Navigate(typeof(FuelCalculator));
 		}
 
-		private void morg_CalculatorButton_Click(object sender, RoutedEventArgs e)
+		private void exit_CalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			Frame.Navigate(typeof(MortgageCalculator));
+			Environment.Exit(0);
 		}
+
 	}
 }

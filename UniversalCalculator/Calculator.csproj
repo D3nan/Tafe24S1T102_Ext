@@ -122,11 +122,11 @@
     <Compile Include="FuelCalculator.xaml.cs">
       <DependentUpon>FuelCalculator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="currencyCalculatorxaml.xaml.cs">
-      <DependentUpon>currencyCalculatorxaml.xaml</DependentUpon>
+    <Compile Include="CurrencyCalculator.xaml.cs">
+      <DependentUpon>CurrencyCalculator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="main menu.xaml.cs">
-      <DependentUpon>main menu.xaml</DependentUpon>
+    <Compile Include="MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="MortgageCalculator.xaml.cs">
       <DependentUpon>MortgageCalculator.xaml</DependentUpon>
@@ -139,8 +139,8 @@
     <Compile Include="Controls\OperatorButtonControl.xaml.cs">
       <DependentUpon>OperatorButtonControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="SimpleCalculator.xaml.cs">
+      <DependentUpon>SimpleCalculator.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -173,11 +173,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="currencyCalculatorxaml.xaml">
+    <Page Include="CurrencyCalculator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="main menu.xaml">
+    <Page Include="MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -193,7 +193,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="SimpleCalculator.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
