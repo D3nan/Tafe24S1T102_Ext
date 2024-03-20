@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="Calculator.MortgageCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+	Height="600" Width="700">
+
+	<Grid Margin="0,0,0,0" BorderBrush="#FF6083AF" BorderThickness="5">
+		<!--Start of the stack panel structure, split into two parts: The heading and the body -->
+		<StackPanel Margin="0,0,0,0">
+			<!--Heading-->
+			<TextBlock x:Name="headerTextblock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Mortgage Calculator " FontSize="60" FontWeight="Bold" Margin="0,10,0,30"/>
+			<!--Body split into another two halves: left and right-->
+			<StackPanel Orientation="Horizontal" Width="600">
+				<!--LHS: All the fields to enter and calculations to show. Each textblock and textbox for the fields are in their own horizontal stack for alignment-->
+				<StackPanel x:Name="calculator" Width="600">
+					<!--Principal Amount-->
+					<StackPanel Orientation="Horizontal">
+						<TextBlock x:Name="principalAmountTextBlock" VerticalAlignment="Center" TextWrapping="Wrap" Text="Principal borrow $" FontSize="20" Margin="5" MinWidth="180"/>
+						<TextBox x:Name="principalAmountTextBox" VerticalAlignment="Center" HorizontalAlignment="Right" TextWrapping="Wrap" Text="" FontSize="20" TextAlignment="Right" Width="300" Margin="5" />
+					</StackPanel>
+					<!--Duration (years)-->
+					<StackPanel Orientation="Horizontal">
+						<TextBlock x:Name="durationYearsTextBlock" VerticalAlignment="Center" TextWrapping="Wrap" Text="Years" FontSize="20" Margin="5" MinWidth="180" HorizontalAlignment="Right"/>
+						<TextBox x:Name="durationYearsTextBox" HorizontalAlignment="Right" VerticalAlignment="Center" TextWrapping="Wrap" Text="" TextAlignment="Right" FontSize="20" Width="300" Margin="5" />
+					</StackPanel>
+					<!--Duration (months)-->
+					<StackPanel Orientation="Horizontal">
+						<TextBlock x:Name="durationMonthsTextBlock" VerticalAlignment="Center" TextWrapping="Wrap" Text="and Months" FontSize="20" Margin="5" MinWidth="180"/>
+						<TextBox x:Name="durationMonthsTextBox" HorizontalAlignment="Right" VerticalAlignment="Center" TextWrapping="Wrap" Text="" TextAlignment="Right" FontSize="20" Width="300" Margin="5" />
+					</StackPanel>
+					<!--Annual Interest-->
+					<StackPanel Orientation="Horizontal">
+						<TextBlock x:Name="annualInterestTextBlock" VerticalAlignment="Center" TextWrapping="Wrap" Text="Yearly Interest Rate" FontSize="20" Margin="5" MinWidth="180"/>
+						<TextBox x:Name="annualInterestTextBox" TextWrapping="Wrap" HorizontalAlignment="Right" VerticalAlignment="Center" Text="" TextAlignment="Right" FontSize="20" Width="300" Margin="5" />
+						<!--CALCULATED FIELDS-->
+					</StackPanel>
+					<!--Monthly Interest Rate-->
+					<StackPanel Orientation="Horizontal">
+						<TextBlock x:Name="monthlyInterestTextBlock" VerticalAlignment="Center" TextWrapping="Wrap" Text="Monthly Interest" FontSize="20" Margin="5" MinWidth="180"/>
+						<TextBox x:Name="monthlyInterestTextBox" HorizontalAlignment="Right" VerticalAlignment="Center" TextWrapping="Wrap" Text="" TextAlignment="Right" FontSize="20" Width="300" Margin="2" BorderThickness="0,0,0,2"/>
+					</StackPanel>
+					<!--Monthly Repaymentt-->
+					<StackPanel Orientation="Horizontal" BorderThickness="0,0,0,2">
+						<TextBlock x:Name="monthlyRepaymentTextBlock" TextWrapping="Wrap" Text="Monthly Repayment" VerticalAlignment="Center" FontSize="20" Margin="5" MinWidth="180"/>
+						<TextBox x:Name="monthlyRepaymentTextBox" HorizontalAlignment="Right" VerticalAlignment="Center" TextWrapping="Wrap" Text="" TextAlignment="Right" FontSize="20" Width="300" Margin="2" BorderThickness="0,0,0,2"/>
+					</StackPanel>
+					<!--Show final calculated amount: sub amount plus GST-->
+					<!--Buttons-->
+					<Button x:Name="calculateButton" Content="Calculate" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Margin="10,20,10,10" Click="calculateButton_Click" MinWidth="200"/>
+                    <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Margin="10" Click="exitButton_Click" MinWidth="200"/>
+
+
+				</StackPanel>
+				<!--Middle Stack Panel-->
+				<!--RHS: Image and any other textblocks-->
+			</StackPanel>
+		</StackPanel>
+
+
+	</Grid>
+</Page>

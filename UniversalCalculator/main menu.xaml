@@ -13,7 +13,7 @@
 		<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 			<TextBlock Text="Universal Calaulator" FontFamily="Arial Black" FontSize="24" FontWeight="Bold" />
 			<Button x:Name= "math_CalculatorButton"  Width="200" Height="50" Margin="0,10" Content="Math Calculator"/>
-			<Button x:Name= "morg_CalculatorButton"  Content="Mortgage Calculator"  Width="200" Height="50" Margin="0,10"/>
+			<Button x:Name= "morg_CalculatorButton"  Content="Mortgage Calculator"  Width="200" Height="50" Margin="0,10" Click="morg_CalculatorButton_Click"/>
 			<Button  x:Name= "cur_CalculatorButton" Content="Currency Calculator" Width="200" Height="50" Margin="0,10" Click="cur_CalculatorButton_Click"  />
 			<Button x:Name= "fuel_CalculatorButton" Content="Fuel Calculator"  Width="200" Height="50" Margin="0,10" Click="fuel_CalculatorButton_Click"/>
 			<Button x:Name= "exit_CalculatorButton" Content="Exit"  Width="200" Height="50" Margin="0,10" Click="exit_CalculatorButton_Click" />
