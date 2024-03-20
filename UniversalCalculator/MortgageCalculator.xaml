@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-	Height="700" Width="700">
+	Height="600" Width="700">
 
 	<Grid Margin="0,0,0,0" BorderBrush="#FF6083AF" BorderThickness="5">
 		<!--Start of the stack panel structure, split into two parts: The heading and the body -->
@@ -52,8 +52,7 @@
 					<!--Show final calculated amount: sub amount plus GST-->
 					<!--Buttons-->
 					<Button x:Name="calculateButton" Content="Calculate" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Margin="10,20,10,10" Click="calculateButton_Click" MinWidth="200"/>
-					<Button x:Name="menuButton" Content="Return to Main Menu" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Margin="10" Click="menuButton_Click" MinWidth="200"/>
-					<Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Margin="10" Click="exitButton_Click" MinWidth="200"/>
+                    <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Margin="10" Click="exitButton_Click" MinWidth="200"/>
 
 
 				</StackPanel>

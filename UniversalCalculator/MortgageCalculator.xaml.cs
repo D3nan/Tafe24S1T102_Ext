@@ -29,8 +29,9 @@ namespace Calculator
 			this.InitializeComponent();
 		}
 
-		private void calculateButton_Click(object sender, RoutedEventArgs e)
+		private async void calculateButton_Click(object sender, RoutedEventArgs e)
 		{
+
 			double annualInterestRate;
 			double durationYears;
 			double durationMonths;
@@ -39,6 +40,20 @@ namespace Calculator
 			double principalAmount;
 			double totalMonths;
 			double monthlyRepayments;
+
+			try
+			{
+				annualInterestRate = double.Parse(annualInterestTextBox.Text);
+				durationYears = double.Parse(durationYearsTextBox.Text);
+				durationMonths = double.Parse(durationMonthsTextBox.Text);
+				principalAmount = double.Parse(principalAmountTextBox.Text);
+			}
+			catch (FormatException)
+			{
+				var errorMsg = new MessageDialog("Error: Please enter valid numbers only for all fields");
+				await errorMsg.ShowAsync();
+				return;
+			}
 
 			annualInterestRate = double.Parse(annualInterestTextBox.Text);
 			monthlyInterestRate = annualInterestRate / 12;
