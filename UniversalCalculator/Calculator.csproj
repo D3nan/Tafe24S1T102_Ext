@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FuelCalculator.xaml.cs">
+      <DependentUpon>FuelCalculator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="currencyCalculatorxaml.xaml.cs">
       <DependentUpon>currencyCalculatorxaml.xaml</DependentUpon>
     </Compile>
@@ -159,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FuelCalculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\NumberButtonControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
